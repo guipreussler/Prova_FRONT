@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+<!--<ol class="list-group">
+    <table>
+        <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Titulo</th>
+              <th scope="col">Editora</th>
+              <th scope="col">Ano de Publicação</th>
+              <th scope="col">Edição</th>
+              <th scope="col">Número de Páginas</th>
+            </tr>
+          </thead>
+          <tbody>
+              <th *ngFor="let livro of livros" class="list-group-item" scope="row"></th>
+                <td>{{ livro.id}}</td>
+                <td>{{ livro.titulo }}</td>
+                <td>{{ livro.editora }}</td>
+                <td>{{ livro.anopublicacao }}</td>
+                <td>{{ livro.edicao }}</td>
+                <td>{{ livro.pagina }</td></th>
+            </tr>
+        </tbody>
+    </table>
+</ol>-->
+
+<div>
+    <h1>Livros</h1>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Título do Livro</th>
+          <th scope="col">Editora</th>
+          <th scope="col">Ano de Publicação</th>
+          <th scope="col">Edição</th>
+          <th scope="col">Número de Páginas</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let livro of livros">
+            <td>{{ livro.id}}</td>
+            <td>{{ livro.titulo }}</td>
+            <td>{{ livro.editora }}</td>
+            <td>{{ livro.anopublicacao }}</td>
+            <td>{{ livro.edicao }}</td>
+            <td>{{ livro.pagina }}</td>
+        </tr>
+        </tbody>
+      </table>
+</div>
+
+<!--<ol class="list-group">
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">|Título do Livro|Editora|Ano de Publicação|Edição|Número de Páginas|</th>
+            </tr>
+        </thead>
+        <br>
+        <tbody>
+            <ol class="lista">
+                <tr>
+                    <li *ngFor="let livro of livros" class="list-group-item">
+                        <td>{{ livro.id}}|</td>
+                        <td>{{ livro.titulo }}|</td>
+                        <td>{{ livro.editora }}|</td>
+                        <td>{{ livro.anopublicacao }}|</td>
+                        <td>{{ livro.edicao }}|</td>
+                        <td>{{ livro.pagina }}</td>
+</li>
+</tr>
+</ol>
+</tbody>
+</table>
+</ol>-->
+<br>
+<button class="cadastrar" routerLink="/livro/cadastrar">Cadastrar Livro</button>

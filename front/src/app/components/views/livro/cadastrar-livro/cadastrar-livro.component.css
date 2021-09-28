@@ -1,0 +1,55 @@
+.formulario {
+    position: relative;
+    left: 37%;
+    top: 29%;
+   
+}
+
+.titulo{
+    position: relative;
+    left: 4.6%;
+    top: 29%;
+
+}
+
+.editora{
+    position: relative;
+    left: 3.8%;
+    top: 29%;
+
+}
+
+.anopublicacao{
+    position: relative;
+    left: 5.7%;
+    top: 29%;
+
+}
+
+.edicao{
+    position: relative;
+    left: 6%;
+    top: 29%;
+
+}
+
+.pagina{
+    position: relative;
+    left: 1%;
+    top: 29%;
+
+}
+
+.cadastrar{
+    position: relative;
+    left: 5%;
+    top: 29%;
+
+}
+
+.voltar{
+    position: relative;
+    left: 10%;
+    top: 29%;
+
+}
